@@ -29,11 +29,11 @@ const BookingPage = () => {
     }
 
     return (
-        <div style={{backgroundColor: '#495E57'}}>
+        <div className='booking-page' style={{backgroundColor: '#495E57'}}>
             <section className='flex-grid' style={{backgroundColor: 'white'}}>
                 <Nav />
             </section>
-            <section>
+            <section className='booking-form' style={{marginTop: '90px', padding: '2rem 10rem'}}>
                 <h1 style={{color: '#F4CE14'}}>Reserve a Table</h1>
                 <BookingForm
                     availableTimes={availableTimes}

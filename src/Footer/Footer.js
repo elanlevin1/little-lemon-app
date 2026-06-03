@@ -3,8 +3,9 @@ import './Footer.css'
 const Footer = () =>  {
     return (
         <footer className="footer">
+            <img className="footer-logo" src="./assets/lemon-logo.png" alt="Little Lemon logo"/>
             <div className="list-column">
-                <h3>Doormat Navigation</h3>
+                <h3>Navigation</h3>
                 <ul className="footer-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -18,21 +19,20 @@ const Footer = () =>  {
             <div className="list-column">
                 <h3>Contact</h3>
                 <ul className="footer-links">
-                    <li><a href="#address">Address</a></li>
-                    <li><a href="#phone">Phone</a></li>
-                    <li><a href="#email">Email</a></li>
+                    <li>123 Main Street, Chicago, IL 60601</li>
+                    <li><a href="tel:1234567890">(123) 456-7890</a></li>
+                    <li><a href="mailto:info@littlelemon.com">info@littlelemon.com</a></li>
                 </ul>
             </div>
 
             <div className="list-column">
-                <h3>Social Media Links</h3>
+                <h3>Connect with Us</h3>
                 <ul className="footer-links">
-                    <li><a href="#address">Address</a></li>
-                    <li><a href="#phone">Phone</a></li>
-                    <li><a href="#email">Email</a></li>
+                    <li><a href="https://www.facebook.com" class="fa fa-facebook"> Facebook</a></li>
+                    <li><a href="https://www.instagram.com" class="fa fa-instagram"> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com" class="fa fa-linkedin"> LinkedIn</a></li>
                 </ul>
             </div>
-            {/* <p>&copy; 2026 Little Lemon. All rights reserved.</p> */}
         </footer>
     )
 }

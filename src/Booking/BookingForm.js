@@ -82,7 +82,7 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
     return (
         <main className='form-container'>
             <form onSubmit={handleSubmit} noValidate>
-                <div className='input-field'>
+                <section className='input-field'>
                     <label htmlFor="res-date">Choose Date</label>
                     <input
                         type="date"
@@ -105,9 +105,9 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
                     >
                         {getDateErrorMessage()}
                     </div>
-                </div>
+                </section>
 
-                <div className='input-field'>
+                <section className='input-field'>
                     <label htmlFor="res-time">Choose Time</label>
                     <select
                         id="res-time"
@@ -134,9 +134,9 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
                     >
                         {getTimeErrorMessage()}
                     </div>
-                </div>
+                </section>
 
-                <div className='input-field'>
+                <section className='input-field'>
                     <label htmlFor="guests">Number of Guests</label>
                     <select
                         id="guests"
@@ -163,9 +163,9 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
                     >
                         {getGuestsErrorMessage()}
                     </div>
-                </div>
+                </section>
 
-                <div className='input-field'>
+                <section className='input-field'>
                     <fieldset>
                         <legend>
                             Choose Occasion (optional)
@@ -198,7 +198,7 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
                             /> Anniversary
                         </label>
                     </fieldset>
-                </div>
+                </section>
 
                 <button
                     type="submit"

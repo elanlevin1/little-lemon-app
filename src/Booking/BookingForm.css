@@ -78,11 +78,12 @@ fieldset {
   margin: 0;
   padding: 0;
   bottom: 0;
+  left: 0;
   font-size: 14px;
   color: #D32F2F;
 }
 
-button {
+form button {
   background-color: #495E57;
   color: white;
   border: none;
@@ -95,15 +96,30 @@ button {
   box-shadow: 0 4px 6px rgba(73, 94, 87, 0.2);
 }
 
-.button-active:hover {
+form .button-active:hover {
   background-color: #F4CE14;
   color: #495E57;
 }
 
-.button-disabled {
+form .button-disabled {
   opacity: 0.4;
   cursor: not-allowed;
   background-color: #cccccc;
   color: #545454;
   box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .booking-page {
+    display: flex;
+    justify-content: center;
+  }
+
+  .booking-form h1 {
+    text-align: center;
+  }
+
+  .error {
+    font-size: 12px;
+  }
 }

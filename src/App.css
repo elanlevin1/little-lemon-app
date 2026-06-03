@@ -4,23 +4,16 @@
 }
 
 .App {
-  /* display: flex; */
-  /* grid-template-areas: "head"
-                       "main"
-                       "footer"; */
-  /* grid-template-rows: fr fr fr; */
-  /* grid-template-columns: auto; */
   font-family: Karla, sans-serif;
 }
 
 .flex-grid {
   display: flex;
-  /* flex: 1; */
 }
 
 h1, h2, h3, p, li, button {
   margin: 0 2rem;
-  padding: 1rem 0; /* top/bottom right/left */
+  padding: 1rem 0;
 }
 
 h1 {
