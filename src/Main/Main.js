@@ -1,5 +1,5 @@
-import './Main.css'
-import React from 'react'
+import './Main.css';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 /* Main component serves as the main content area of the home page, displaying the hero section,

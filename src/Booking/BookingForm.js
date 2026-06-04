@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './BookingForm.css'
+import './BookingForm.css';
 
 /* BookingForm component renders a form for users to make a reservation,
 handling input changes, form validation, and submission. It receives props for available times, a
