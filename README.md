@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Little Lemon Restaurant Website Capstone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About
 
-## Available Scripts
+Little Lemon is a responsive restaurant website developed as a capstone project for the Meta Front-End Developer Professional Certificate. The application allows users to reserve a table and view information about the restaurant through an intuitive and accessible interface.
 
-In the project directory, you can run:
+The project demonstrates modern front-end development practices using React, component-based architecture, responsive design principles, form validation, and user experience best practices.
 
-### `npm start`
+## Technologies Used
+- React
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Mock reservation API
+- Git & GitHub
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
 
-### `npm test`
+```bash
+git clone https://github.com/elanlevin1/little-lemon-app.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+```bash
+cd little-lemon-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. The application will be available at:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+http://localhost:3000
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Planning the UX and UI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project began with creating wireframes for the Little Lemon homepage in Figma. First, I created a low-fidelity wireframe to serve as the blueprint for the homepage.
 
-## Learn More
+<img src="./public/screenshots/low-fidelity-wireframe.png" width="700" alt="Figma low-fidelity wireframe">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Next, I developed a high-fidelity wireframe, adding branding, colors, images, typography, and other visual styling.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<img src="./public/screenshots/high-fidelity-wireframe.png" width="700" alt="Figma high-fidelity wireframe">
 
-### Code Splitting
+## Setting up the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+After completing the wireframes, I set up the project structure using React and created the semantic HTML layout and reusable components for the homepage. I also added meta tags and Open Graph Protocol (OGP) data before implementing the CSS styling based on the high-fidelity design.
 
-### Analyzing the Bundle Size
+Next, I developed the table reservation page using React forms and state management. A mock API was used to retrieve available reservation times. Form validation, unit tests, and accessibility improvements using ARIA attributes were then added.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Once all required functionality was implemented, I evaluated and revised the user experience using Jakob Nielsen's 10 Usability Heuristics for User Interface Design. Key improvements focused on user control and freedom, as well as visibility of system status through clearer visual feedback when interacting with form elements and navigation. Finally, I ensured the site was responsive and functional across desktop and mobile devices.
 
-### Making a Progressive Web App
+## Future Improvements
+- Add customer information section and the ability to modify or cancel reservations
+- Implement the remaining pages linked in the navigation bar
+- Add user authentication and login functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
+Elan Levin
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Meta Front-End Developer Professional Certificate Capstone Project

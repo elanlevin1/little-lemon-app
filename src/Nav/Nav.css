@@ -1,3 +1,5 @@
+/* Nav.css contains the styling for the Nav component, defining the layout and appearance of the navigation bar,
+including the logo, navigation links, and responsive design for mobile devices. */
 .nav {
   display: flex;
   flex-direction: row;
@@ -45,8 +47,7 @@
 }
 
 @media (max-width: 768px) {
-
-  /* Menu icon CSS lines 51-71 from https://www.w3schools.com/howto/howto_css_menu_icon.asp */
+  /* Menu icon CSS lines 51-72 from https://www.w3schools.com/howto/howto_css_menu_icon.asp */
   .hamburger-container {
     display: inline-block;
     cursor: pointer;

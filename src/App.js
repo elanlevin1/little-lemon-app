@@ -4,6 +4,8 @@ import BookingPage from './Booking/BookingPage';
 import ConfirmedBooking from './Booking/ConfirmedBooking';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+/* App component serves as the main entry point for the application,
+setting up routing and rendering the appropriate components based on the URL path. */
 function App() {
   return (
     <div className="App">

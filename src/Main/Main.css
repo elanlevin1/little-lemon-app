@@ -1,3 +1,5 @@
+/* Main.css contains the styling for the Main component, including layout, colors, typography,
+and responsive design for the hero section, weekly specials, customer testimonials, and about section. */
 .main {
     display: flex;
     flex-direction: column;

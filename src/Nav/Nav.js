@@ -1,6 +1,10 @@
 import './Nav.css'
 import { useRef, useState } from "react";
 
+/* Nav component renders the navigation bar of the application,
+including the logo, navigation links, and a hamburger menu for mobile responsiveness.
+It manages the state of the menu's open/closed status
+and handles smooth scrolling to different sections of the page when navigation links are clicked. */
 const Nav = () => {
     const navRef = useRef(null);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,6 +25,7 @@ const Nav = () => {
         }
     };
 
+    /* The component returns a navigation bar with a logo, a hamburger menu for mobile view, and navigation links. */
     return (
         <nav className="nav" ref={navRef}>
             <img className="logo" src="./assets/Logo.jpg" alt="Little Lemon Logo"/>

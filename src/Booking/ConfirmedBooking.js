@@ -1,6 +1,8 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import Nav from '../Nav/Nav';
 
+/* ConfirmedBooking component displays a confirmation message after a successful reservation,
+showing the reservation details, if available, and providing a button to return to the home page. */
 const ConfirmedBooking = () => {
     const location = useLocation();
     const formData = location.state || {};

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './BookingForm.css'
 
+/* BookingForm component renders a form for users to make a reservation,
+handling input changes, form validation, and submission. It receives props for available times, a
+dispatch function for updating times, and a submitForm function for handling form submission. */
 const BookingForm = ({availableTimes, dispatch, submitForm}) => {
     const [data, setData] = useState({date: '', time: '', guests: '', occasion: 'none'});
     const [touched, setTouched] = useState({date: false, time: false, guests: false});
@@ -10,6 +13,8 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
     maxDate.setFullYear(maxDate.getFullYear() + 1);
     const maxDateStr = maxDate.toISOString().split('T')[0];
 
+    /* dateChange function handles changes to the date input field,
+    updating the form data state and dispatching an action to update available times based on the selected date. */
     const dateChange = e => {
         const selectedDateString = e.target.value;
         const selectedDate = new Date(selectedDateString);
@@ -17,12 +22,15 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
         dispatch({ type: 'update', date: selectedDate });
     };
 
+    /* handleErrors function generates error messages for form validation based on the type of input field. */
     const handleErrors = (inputFieldType) => {
         return (
             <p className="error">Please select a {inputFieldType}</p>
         )
     };
 
+    /* getDateErrorMessage, getTimeErrorMessage, and getGuestsErrorMessage functions return appropriate error messages
+    for each form field based on the current state of the form data and whether the field has been touched. */
     const getDateErrorMessage = () => {
         if (data.date && (data.date < today || data.date > maxDateStr)) {
             return handleErrors("valid date");
@@ -79,6 +87,8 @@ const BookingForm = ({availableTimes, dispatch, submitForm}) => {
         clearForm();
     };
 
+    /* The component renders a form with input fields for date, time, number of guests, and occasion,
+    along with validation error messages and a submit button that is disabled until the form is valid. */
     return (
         <main className='form-container'>
             <form onSubmit={handleSubmit} noValidate>

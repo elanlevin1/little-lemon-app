@@ -2,7 +2,8 @@ import './Main.css'
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-
+/* Main component serves as the main content area of the home page, displaying the hero section,
+weekly specials, customer testimonials, and an about section with information about the restaurant. */
 const Main = () =>  {
     const navigate = useNavigate();
 
@@ -60,6 +61,8 @@ const Main = () =>  {
     )
 }
 
+/* Specials component renders a card for each weekly special,
+displaying the food image, name, price, description, and order delivery option. */
 const Specials = ({imgSrc, food, price, description}) => {
     return (
         <div className='menu-card'>
@@ -77,6 +80,8 @@ const Specials = ({imgSrc, food, price, description}) => {
     )
 }
 
+/* The food array contains objects representing the weekly specials,
+each with an id, image source, food name, price, and description. */
 const food = [
     {id: 1, imgSrc: "./assets/greek-salad.jpg", food: "Greek salad", price: "$12.99",
         description: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."},
@@ -86,17 +91,20 @@ const food = [
         description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."}
 ]
 
+/* CustomersSay component renders a testimonial card for each customer review,
+displaying the customer's name, review text, and a 5-star rating. */
 const CustomersSay = ({imgSrc, name, reviewText}) => {
     return (
         <div className='testimonial'>
             <div className='rating'>
                 <h4>Rating</h4>
+                {/* Adds stars to the testimonial card, styled in Main.css */}
                 {Array(5).fill().map((_, i) => (
                     <div className='star' key={i}></div>
                 ))}
             </div>
             <div className='person'>
-                <img className="image" src="./assets/testimonial-img.png" alt={`Review by ${name}`}/>
+                <img className="image" src={imgSrc} alt={`Review by ${name}`}/>
                 <h4>{name}</h4>
             </div>
             <h5>{reviewText}</h5>
@@ -104,11 +112,13 @@ const CustomersSay = ({imgSrc, name, reviewText}) => {
     )
 }
 
+/* The reviews array contains objects representing customer testimonials,
+each with an id, image source, customer name, and review text. */
 const reviews = [
-    {id: 1, imgSrc: '', name: 'Phineas', reviewText: 'Delicious food, a calm atmosphere, and genuinely friendly staff served up one of the best meals I’ve had in a while.'},
-    {id: 2, imgSrc: '', name: 'Stacy', reviewText: 'This place knows how to serve authentic flavor. Every bite had depth, and the spices were just right, nothing too heavy, just enough to make it memorable.'},
-    {id: 3, imgSrc: '', name: 'Candace', reviewText: 'The menu offers comfort food with a modern twist. Each dish was balanced and felt good.'},
-    {id: 4, imgSrc: '', name: 'Jeremy', reviewText: 'The food and service are consistently excellent. It’s a dependable establishment with delectable flavors that I always enjoy.'}
+    {id: 1, imgSrc: './assets/testimonial-img.png', name: 'Phineas', reviewText: 'Delicious food, a calm atmosphere, and genuinely friendly staff served up one of the best meals I’ve had in a while.'},
+    {id: 2, imgSrc: './assets/testimonial-img.png', name: 'Stacy', reviewText: 'This place knows how to serve authentic flavor. Every bite had depth, and the spices were just right, nothing too heavy, just enough to make it memorable.'},
+    {id: 3, imgSrc: './assets/testimonial-img.png', name: 'Candace', reviewText: 'The menu offers comfort food with a modern twist. Each dish was balanced and felt good.'},
+    {id: 4, imgSrc: './assets/testimonial-img.png', name: 'Jeremy', reviewText: 'The food and service are consistently excellent. It’s a dependable establishment with delectable flavors that I always enjoy.'}
 ]
 
 export default Main;

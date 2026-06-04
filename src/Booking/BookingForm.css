@@ -1,3 +1,5 @@
+/* BookingForm.css contains the styles for the BookingForm component,
+including layout, input styling, error messages, and responsive design. */
 .form-container {
   display: flex;
   justify-content: center;

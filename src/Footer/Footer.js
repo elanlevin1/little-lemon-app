@@ -1,5 +1,7 @@
 import './Footer.css'
 
+/* Footer component renders the footer section of the website,
+including the restaurant logo, navigation links, contact information, and social media links. */
 const Footer = () =>  {
     return (
         <footer className="footer">
